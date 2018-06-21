@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import JSX from './JSX';
+import JSX from './2_jsx/JSX';
+import Render from './3_rendering_elements/Render'
 
 class App extends Component {
 
@@ -17,6 +18,8 @@ class App extends Component {
         </p>
 
           <JSX/>
+
+          <Render/>
 
       </div>
     );
