@@ -23,10 +23,10 @@ Add CDN Links to index.html
 
 ## Main Concept
 
-- Hello World
+- 1.Hello World
 
   [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
-- Introduce JSX
+- 2.Introduce JSX
   
   *JSX* is a syntax extension to JavaScript.
   
@@ -44,11 +44,39 @@ Add CDN Links to index.html
   
   > Dismissing an idea is so easy because it doesn’t involve any work. You can scoff at it. You can ignore it. You can puff some smoke at it. That’s easy. The hard thing to do is protect it, think about it, let it marinate, explore it, riff on it, and try it. The right idea could start out life as the wrong idea.
   
-  *JSX* is an optional preprocessor to let you use HTML-like syntax.
+  *Example2* is an optional preprocessor to let you use HTML-like syntax.
   
   [Pete Hunt: React: Rethinking best practices -- JSConf EU 2013](https://www.youtube.com/watch?v=x7cQ3mrcKaY)
   
   [PPT](https://www.slideshare.net/floydophone/react-preso-v2)
   
+- 3.Render Elements
+
+  *Elements are the smallest building blocks of React apps.*
+
+- 4.Components and Props
+
+  *Always start component names with a capital letter.*  
+  *All React components must act like pure functions with respect to their props.*
+
+- 5.State and Lifecycle
+
+  *componentDidMount()*
   
+  componentDidMount() is invoked immediately after a component is mounted (inserted into the tree).
+  
+  *componentWillUnmount()*
+  
+  componentWillUnmount() is invoked immediately before a component is unmounted and destroyed.
+  
+  *Do Not Modify State Directly*
+  <pre><code>
+  // Wrong
+  this.state.comment = 'Hello';
+  </code></pre>
+  
+  <pre><code>
+  // Correct
+  this.setState({comment: 'Hello'});
+  </code></pre>
   

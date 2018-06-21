@@ -9,7 +9,7 @@ function tick() {
 
 setInterval(tick, 1000);
 
-class Render extends Component {
+class Example3 extends Component {
 
     render() {
         return (
@@ -21,4 +21,4 @@ class Render extends Component {
     }
 }
 
-export default Render;
+export default Example3;

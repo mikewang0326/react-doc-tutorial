@@ -40,7 +40,7 @@ const element4 = React.createElement(
     'Hello, world!'
 );
 
-class JSX extends Component {
+class Example2 extends Component {
 
     render() {
         return (
@@ -59,4 +59,4 @@ class JSX extends Component {
     }
 }
 
-export default JSX;
+export default Example2;
