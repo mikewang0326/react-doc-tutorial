@@ -5,6 +5,7 @@ import Example2 from './2_jsx/Example2';
 import Example3 from './3_rendering_elements/Example3'
 import Example4 from './4_components_and_pros/Example4'
 import Example5 from './5_state_and_lifecycle/Example5'
+import Example6 from './6_handling_events/Example6'
 
 class App extends Component {
 
@@ -30,6 +31,9 @@ class App extends Component {
 
           <h1>example5:</h1>
           <Example5/>
+
+          <h1>example6:</h1>
+          <Example6/>
 
       </div>
     );

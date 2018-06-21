@@ -80,3 +80,7 @@ Add CDN Links to index.html
   this.setState({comment: 'Hello'});
   </code></pre>
   
+- 6.Handling Events
+
+  *You have to be careful about the meaning of **this** in JSX callbacks. In JavaScript, class methods are not bound by default. If you forget to bind this.handleClick and pass it to onClick, this will be undefined when the function is actually called.*  
+  [Understanding JavaScript Bind ()](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
