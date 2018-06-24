@@ -25,6 +25,7 @@ const element1 = (
     </h1>
 );
 
+// eslint-disable-next-line
 const element2 = <img src={user.avatarUrl}></img>;
 
 

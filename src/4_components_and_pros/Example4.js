@@ -11,6 +11,7 @@ const element = <div>
     <Welcome name="Edite" />
 </div>
 
+// eslint-disable-next-line
 function Comment(props) {
     return (
         <div className="Comment">
