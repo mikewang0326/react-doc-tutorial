@@ -9,6 +9,7 @@ import Example6 from './6_handling_events/Example6'
 import Example7 from './7_conditional_rendering/Example7'
 import Example8 from './8_lists_and_keys/Example8'
 import Example9 from './9_forms/Example9'
+import Example10 from './10_lifting_state_up/Example10'
 
 class App extends Component {
 
@@ -46,6 +47,9 @@ class App extends Component {
 
           <h1 className="App-example">example9:</h1>
           <Example9/>
+
+          <h1 className="App-example">example10:</h1>
+          <Example10/>
 
       </div>
     );
