@@ -84,3 +84,30 @@ Add CDN Links to index.html
 
   *You have to be careful about the meaning of **this** in JSX callbacks. In JavaScript, class methods are not bound by default. If you forget to bind this.handleClick and pass it to onClick, this will be undefined when the function is actually called.*  
   [Understanding JavaScript Bind ()](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
+
+- 7.Conditional Rendering
+  
+- 8.Lists and Keys
+
+  Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity
+  
+  Keys only make sense in the context of the surrounding array.
+  
+  Keys used within arrays should be unique among their siblings.
+
+- 9.Forms
+
+  In HTML, form elements such as &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with setState()
+  
+
+- 10.Lifting State Up
+   
+   There should be a single *“source of truth”* for any data that changes in a React application. Usually, the state is first added to the component that needs it for rendering. Then, if other components also need it, you can lift it up to their closest common ancestor. Instead of trying to sync the state between different components, you should rely on the top-down data flow.
+
+   Lifting state involves writing more “boilerplate” code than two-way binding approaches, but as a benefit, it takes less work to find and *isolate bugs*. Since any state “lives” in some component and that component alone can change it, the surface area for bugs is greatly reduced. Additionally, you can implement any custom logic to reject or transform user input.
+
+- 11.Composition vs Inheritance
+
+  At Facebook, we use React in thousands of components, and we haven’t found any use cases where we would recommend creating component inheritance hierarchies.
+  
+  *Props and composition* give you all the flexibility you need to customize a component’s look and behavior in an explicit and safe way. 
