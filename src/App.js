@@ -11,6 +11,7 @@ import Example8 from './8_lists_and_keys/Example8'
 import Example9 from './9_forms/Example9'
 import Example10 from './10_lifting_state_up/Example10'
 import Example11 from './11_composition_vs_Inheritance/Example11'
+import Example12 from './12_thinking_in_react/Example12'
 
 class App extends Component {
 
@@ -54,6 +55,9 @@ class App extends Component {
 
           <h1 className="App-example">example11:</h1>
           <Example11/>
+
+          <h1 className="App-example">example12:</h1>
+          <Example12/>
 
       </div>
     );

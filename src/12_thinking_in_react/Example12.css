@@ -1,0 +1,11 @@
+#FilterableProductTable{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ProductTable{
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto
+}

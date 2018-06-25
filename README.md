@@ -111,3 +111,41 @@ Add CDN Links to index.html
   At Facebook, we use React in thousands of components, and we haven’t found any use cases where we would recommend creating component inheritance hierarchies.
   
   *Props and composition* give you all the flexibility you need to customize a component’s look and behavior in an explicit and safe way. 
+  
+- 12.Thinking in React  
+  *Step 1: Break The UI Into A Component Hierarchy*
+  
+  The first thing you’ll want to do is to draw boxes around every component (and subcomponent) in the mock and give them all names. 
+  
+  *Step 2: Build A Static Version in React*
+  
+  There are two types of “model” data in React: props and state.
+  
+  Step 3: Identify The Minimal (but complete) Representation Of UI State
+  
+  To build your app correctly, you first need to think of the minimal set of mutable state that your app needs. The key here is *[DRY: Don’t Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)*.
+  
+  Simply ask three questions about each piece of data:
+  
+  *1, Is it passed in from a parent via props?*
+  
+  If so, it probably isn’t state.
+  
+  *2, Does it remain unchanged over time?* 
+  If so, it probably isn’t state.
+  
+  *3, Can you compute it based on any other state or props in your component?*
+   
+  If so, it isn’t state. 
+  
+  *Step 4: Identify Where Your State Should Live*
+  
+  Remember: *React is all about one-way data flow down the component hierarchy*. It may not be immediately clear which component should own what state. This is often the most challenging part for newcomers to understand, so follow these steps to figure it out:
+  
+  For each piece of state in your application:
+  
+  - Identify every component that renders something based on that state.
+  - Find a common owner component (a single component above all the components that need the state in the hierarchy).
+  - Either the common owner or another component higher up in the hierarchy should own the state.
+  - If you can’t find a component where it makes sense to own the state, create a new component simply for holding the state and add it somewhere in the hierarchy above the common owner component.
+  
