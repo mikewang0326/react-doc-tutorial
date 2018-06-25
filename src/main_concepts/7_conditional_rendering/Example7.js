@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../App.css';
+import '../../App.css';
 
 function UserGreeting(props) {
     return <h1>Welcome back!</h1>;

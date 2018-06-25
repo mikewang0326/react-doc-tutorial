@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../App.css';
+import '../../App.css';
 
 function NumberList1(props) {
     const numbers = props.numbers;
