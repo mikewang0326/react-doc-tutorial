@@ -28,6 +28,11 @@
   color: forestgreen;
 }
 
+.App-example-category {
+  background-color: grey;
+  color: black;
+}
+
 #id_forms {
   margin: 20px;
 }

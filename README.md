@@ -226,4 +226,17 @@ Add CDN Links to index.html
   - Screen readers
   - Commonly Used Screen Readers
   - Other Screen Readers
-    
+
+- Refs and the DOM
+
+  Refs provide a way to *access DOM nodes or React elements* created in the render method.
+  
+  *When to Use Refs ?*
+  
+  There are a few good use cases for refs:
+  
+  - Managing focus, text selection, or media playback.
+  - Triggering imperative animations.
+  - Integrating with third-party DOM libraries.
+  
+  You may *not use* the ref attribute on functional components because they don’t have instances:

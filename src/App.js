@@ -13,6 +13,7 @@ import Example9 from './main_concepts/9_forms/Example9'
 import Example10 from './main_concepts/10_lifting_state_up/Example10'
 import Example11 from './main_concepts/11_composition_vs_Inheritance/Example11'
 import Example12 from './main_concepts/12_thinking_in_react/Example12'
+import Example_Refs_and_the_DOM from "./advanced_guides/refs_and_the_dom/Example_Refs_and_the_DOM";
 
 class App extends Component {
 
@@ -26,6 +27,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+
+          <h1 className="App-example-category">Main Concepts</h1>
 
           <h1 className="App-example">Example1: Hello World</h1>
           <Example1/>
@@ -62,6 +65,11 @@ class App extends Component {
 
           <h1 className="App-example">Example12: Thinking In React</h1>
           <Example12/>
+
+
+          <h1 className="App-example-category">Anvanced Guides</h1>
+          <h1 className="App-example">Example_Refs_and_the_DOM</h1>
+          <Example_Refs_and_the_DOM/>
 
       </div>
     );
